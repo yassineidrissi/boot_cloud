@@ -19,15 +19,15 @@ import time
 from twilio.rest import Client
 
 #from config import DispatchToTelegram, ExPositions, ExtractName, ExtractSoup, HandlePosition, Load_Pickle,  pickle_it, telegram_bot_sendtext
-import config3
-logging.basicConfig(filename="src/logs/file1.log",level=logging.INFO,format="%(asctime)s:%(levelname)s:%(message)s")
 
 #tradinghorse
-url = "https://www.binance.com/en/futures-activity/leaderboard?type=myProfile&tradeType=PERPETUAL&encryptedUid=D64DDD2177FA081E3F361F70C703A562"
 
 
-saved_list = [] 
+URL = 'https://candidature.1337.ma/piscines'
 
+headers = {
+"User-Agent":"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36"
+}
 
 def main(url,new_position = True):
     page = requests.get(URL , headers=headers)
@@ -35,7 +35,9 @@ def main(url,new_position = True):
 
     user = "yassine1337idrissi@gmail.com"
     password = "Yassin@0661535096"
-
+    
+    
+    driver = webdriver.Chrome('/usr/local/bin/chromedriver')
     driver.get(URL)
 
     driver.find_element_by_id("user_email").send_keys(user)
@@ -88,7 +90,7 @@ def main(url,new_position = True):
         
 if __name__ == "__main__":
     try:
-        main(url)
-    except Timeexception :
+        main()
+    except TimeoutException :
         time.sleep(500)
         main()
