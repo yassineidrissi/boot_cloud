@@ -37,7 +37,7 @@ def main(url,new_position = True):
     password = "Yassin@0661535096"
     
     
-    driver = webdriver.Chrome('/usr/local/bin/chromedriver')
+    driver = webdriver.Chrome('/home/yassin_chati_98/1337/boot_cloud/chromedriver')
     driver.get(URL)
 
     driver.find_element_by_id("user_email").send_keys(user)
