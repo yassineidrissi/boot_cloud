@@ -83,6 +83,7 @@ def main(url,new_position = True):
             # exit()
                 # telegram_bot_sendtext("🙏 sorry, just a test🙏")
         time.sleep(20)
+    driver.quit()
 
         
 if __name__ == "__main__":
