@@ -1,6 +1,6 @@
 
-from re import X
-from tkinter import Y
+# from re import X
+# from tkinter import Y
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.options import Options
 from selenium.common.exceptions import TimeoutException
@@ -89,7 +89,7 @@ def telegram_bot_call_k():
 chrome_options = Options()
 options = webdriver.ChromeOptions()
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
-driver = webdriver.Chrome('/Users/yassine/Documents/boot/chromedriver', options=options)
+driver = webdriver.Chrome('/home/yassin_chati_98/1337/boot_cloud/chromedriver', options=options)
 chrome_options.add_argument('--headless')
 chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--disable-dev-shm-usage')
@@ -118,39 +118,39 @@ soup2 = BeautifulSoup(page2.content, "html.parser")
 # driver.find_element_by_class_name("recaptcha-checkbox-borderAnimation").click()
 # *tihs 👆🏻 is for click on non-human touch device
 
-x = 0
-y = 0
-if soup != soup2:
-    telegram_bot_sendtext_t("🚀ana an9l3🚀")
-    print("I m insade the web site")
-while True:
-    driver.refresh()
-    page3 = requests.get(url2 , headers=headers)
-    soup3 = BeautifulSoup(page2.content, "html.parser")
-    if soup3 != soup2:
-        print("there is a new piscine")
-        telegram_bot_sms("🚨kayn piscine-pooooooooool🚨 🔗ha lien: https://candidature.1337.ma/piscines🔗 🏃‍♂️ serbi chdo 🏃‍♂️", ayoub)
-        telegram_bot_sms("🚨kayn piscine-pooooooooool🚨 🔗ha lien: https://candidature.1337.ma/piscines🔗 🏃‍♂️ serbi chdo 🏃‍♂️", khalid)
-        telegram_bot_sms("🚨kayn piscine-pooooooooool🚨 🔗ha lien: https://candidature.1337.ma/piscines🔗 🏃‍♂️ serbi chdo 🏃‍♂️", ana)
-        telegram_bot_sendtext("🚨kayn piscine-pooooooooool🚨")
-        telegram_bot_sendtext("🔗ha lien: https://candidature.1337.ma/piscines🔗")
-        telegram_bot_sendtext("🏃‍♂️ serbi chdo 🏃‍♂️")
-        telegram_bot_call()
-        time.sleep(20)
-        telegram_bot_call_a()
-        time.sleep(20)
-        telegram_bot_call_k()
-        exit()
-    else:
-        x +=1
-        y +=1
-        if x > 15:
-            print ("i try ",y,"times but no pool😥")
-            telegram_bot_sendtext_t("😋gha thna rah mzl matla7 pool😉")
-            x = 0      
-        # exit()
-            # telegram_bot_sendtext("🙏 sorry, just a test🙏")
-    time.sleep(20)
+# x = 0
+# y = 0
+# if soup != soup2:
+#     telegram_bot_sendtext_t("🚀ana an9l3🚀")
+#     print("I m insade the web site")
+# while True:
+#     driver.refresh()
+#     page3 = requests.get(url2 , headers=headers)
+#     soup3 = BeautifulSoup(page2.content, "html.parser")
+#     if soup3 != soup2:
+#         print("there is a new piscine")
+#         telegram_bot_sms("🚨kayn piscine-pooooooooool🚨 🔗ha lien: https://candidature.1337.ma/piscines🔗 🏃‍♂️ serbi chdo 🏃‍♂️", ayoub)
+#         telegram_bot_sms("🚨kayn piscine-pooooooooool🚨 🔗ha lien: https://candidature.1337.ma/piscines🔗 🏃‍♂️ serbi chdo 🏃‍♂️", khalid)
+#         telegram_bot_sms("🚨kayn piscine-pooooooooool🚨 🔗ha lien: https://candidature.1337.ma/piscines🔗 🏃‍♂️ serbi chdo 🏃‍♂️", ana)
+#         telegram_bot_sendtext("🚨kayn piscine-pooooooooool🚨")
+#         telegram_bot_sendtext("🔗ha lien: https://candidature.1337.ma/piscines🔗")
+#         telegram_bot_sendtext("🏃‍♂️ serbi chdo 🏃‍♂️")
+#         telegram_bot_call()
+#         time.sleep(20)
+#         telegram_bot_call_a()
+#         time.sleep(20)
+#         telegram_bot_call_k()
+#         exit()
+#     else:
+#         x +=1
+#         y +=1
+#         if x > 15:
+#             print ("i try ",y,"times but no pool😥")
+#             telegram_bot_sendtext_t("😋gha thna rah mzl matla7 pool😉")
+#             x = 0      
+#         # exit()
+#             # telegram_bot_sendtext("🙏 sorry, just a test🙏")
+#     time.sleep(20)
 
 # driver.close()
 #! the code stop here 🙏
