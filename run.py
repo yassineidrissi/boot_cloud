@@ -33,8 +33,8 @@ def main(url,new_position = True):
     page = requests.get(URL , headers=headers)
     soup = BeautifulSoup(page.content, "html.parser")
 
-    user = "yassine1337idrissi@gmail.com"
-    password = "Yassin@0661535096"
+    user = ""
+    password = ""
     
     
     driver = webdriver.Chrome('/home/yassin_chati_98/1337/boot_cloud/chromedriver')
